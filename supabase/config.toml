@@ -1,0 +1,9 @@
+project_id = "csyfttjvunfaygppanuw"
+
+[functions.chat]
+enabled = true
+verify_jwt = false
+
+[functions.create-notification]
+enabled = true
+verify_jwt = true
