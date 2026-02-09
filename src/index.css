@@ -1,8 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Montserrat:wght@300;400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Montserrat:wght@300;400;500;600;700&display=swap');
 
 @layer base {
   :root {
@@ -42,7 +42,7 @@
     --card-elevated: 0 0% 14%;
     --success: 142 76% 36%;
     --warning: 38 92% 50%;
-    
+
     /* Heatmap colors */
     --heat-low: 160 60% 45%;
     --heat-medium: 50 90% 50%;
@@ -94,7 +94,7 @@
   .text-rose {
     color: hsl(var(--rose));
   }
-  
+
   .bg-rose {
     background-color: hsl(var(--rose));
   }
@@ -116,7 +116,12 @@
   }
 
   .gradient-divider {
-    background: linear-gradient(90deg, transparent, hsl(var(--rose) / 0.5), transparent);
+    background: linear-gradient(
+      90deg,
+      transparent,
+      hsl(var(--rose) / 0.5),
+      transparent
+    );
   }
 
   /* Heatmap utilities */
