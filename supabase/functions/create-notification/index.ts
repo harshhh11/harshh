@@ -60,7 +60,7 @@ serve(async (req) => {
     const { data, error } = await supabase
       .from("notifications")
       .insert({
-        user_id,
+        user_id: authenticatedUserId,
         title,
         message,
         type: type || "info",
